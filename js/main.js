@@ -6,20 +6,21 @@ function buyTicket() {
     const age = prompt('What is your age?');
     let cost = getBaseTicketCost(age);
     const isMatinee = prompt('Are you attending a matinee show?').toLowerCase();
-    cost = applyMatineeDiscount(cost, isMatinee);
-    if ((age <= 12) || (age >= 65)) {
-        cost = CHILD_AND_SENIOR_TICKET_COST;
-    } alert('Your ticket will cost: $' + cost);
+    cost = applyMatineeDiscount(cost, isMatinee); 
+
+    alert('Your ticket will cost: $' + cost);
 }
 
 function getBaseTicketCost(age) {
     if ((age <= 12) || (age >= 65)) {
         return CHILD_AND_SENIOR_TICKET_COST;
-    } return GENERAL_ADMISSION_TICKET_COST;
+    } 
+    return GENERAL_ADMISSION_TICKET_COST;
 }
 
 function applyMatineeDiscount(cost, isMatinee) {
-    if ((isMatinee === 'yes') || (isMatinee === 'Yes') || (isMatinee === 'y')) {
+    if ((isMatinee === 'yes') || (isMatinee === 'y')) {
         return cost -= MATINEE_DISCOUNT;
-    } return cost;
+    } 
+    return cost;
 }
