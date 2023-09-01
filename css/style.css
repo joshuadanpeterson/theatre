@@ -1,5 +1,17 @@
 /* style.css */
 
+/* Define custom CSS variables */
+:root {
+    --custom-bg-color: #5de8fa;
+    --custom-text-color: rgb(36, 21, 146);
+}
+
+/* Define a custom utility class */
+.bg-contrasting {
+    background-color: var(--custom-bg-color); /* Set your desired background color */
+    color: var(--custom-text-color); /* Set the contrasting text color */
+}
+
 /* Change font for the entire page */
 body {
     font-family: Arial, sans-serif;
@@ -7,13 +19,17 @@ body {
 
 /* Style the font used for the title */
 h1 {
-    font-family: "Playfair Display";
     font-weight: bolder;
+
+    /* Add text outline */
+    -webkit-text-stroke: .4px white; /* For Safari/WebKit browsers */
+    text-stroke: .25px white; /* For other browsers */
 }
 
 /* Style the card */
 .card {
-    background-color: #f8f9fa;
+    background-color: var(--custom-bg-color);
+    color: var(--custom-text-color);
     border: 1px solid #007bff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -21,7 +37,89 @@ h1 {
 
 /* Customize the button */
 .btn-primary {
-    background-color: #007bff;
+    background-color: hsl(212, 100%, 50%);
     border: none;
+    text-shadow: 2px 2px 4px var(--custom-text-color);
+/* Define custom CSS variables */
+:root {
+    --custom-bg-color: #3ed1e4;
+    --custom-text-color: rgb(36, 21, 146);
+}
+
+/* Define a custom utility class */
+.bg-contrasting {
+    background-color: var(--custom-bg-color); /* Set your desired background color */
+    color: var(--custom-text-color); /* Set the contrasting text color */
+}
+
+/* Change font for the entire page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the font used for the title */
+h1 {
+    font-weight: bolder;
+
+    /* Add text outline */
+    -webkit-text-stroke: .4px white; /* For Safari/WebKit browsers */
+    text-shadow: 0.4px 0 white, -0.4px 0 white, 0 0.4px white, 0 -0.4px white; /* For other browsers */
+}
+
+/* Style the card */
+.card {
+    background-color: var(--custom-bg-color);
+    color: var(--custom-text-color);
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Customize the button */
+.btn-primary {
+    background-color: hsl(212, 100%, 50%);
+    border: none;
+    text-shadow: 2px 2px 4px var(--custom-text-color);
+/* Define custom CSS variables */
+:root {
+    --custom-bg-color: #3ed1e4;
+    --custom-text-color: rgb(36, 21, 146);
+}
+
+/* Define a custom utility class */
+.bg-contrasting {
+    background-color: var(--custom-bg-color); /* Set your desired background color */
+    color: var(--custom-text-color); /* Set the contrasting text color */
+}
+
+/* Change font for the entire page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the font used for the title */
+h1 {
+    font-weight: bolder;
+    text-shadow: 
+        -1px -1px 0 white, 
+         1px -1px 0 white, 
+        -1px  1px 0 white, 
+         1px  1px 0 white;
+  }
+
+/* Style the card */
+.card {
+    background-color: var(--custom-bg-color);
+    color: var(--custom-text-color);
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Customize the button */
+.btn-primary {
+    background-color: hsl(212, 100%, 50%);
+    border: none;
+    text-shadow: 2px 2px 4px var(--custom-text-color);
 }
 
