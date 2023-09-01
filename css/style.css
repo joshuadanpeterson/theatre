@@ -14,7 +14,7 @@ h1 {
 /* Style the card */
 .card {
     background-color: #f8f9fa;
-    border: none;
+    border: 1px solid #007bff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
